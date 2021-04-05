@@ -1,0 +1,126 @@
+body {
+    /*background-image: url("Background Coffee.jpg"); /* The image used */
+    /*background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: #0F362D;
+  }
+
+
+
+#tab1 {
+     overflow:scroll;
+     height:500px;
+     width:1100px;
+}
+#tab1 table {
+    width:500px;
+    background-color:lightgray;
+}
+
+#tab2 {
+     overflow:scroll;
+     height:500px;
+     width:1100px;
+}
+#tab2 table {
+    width:100%;
+    background-color:lightgray;
+}
+
+#tab3 {
+     overflow:scroll;
+     height:100%;
+     width:1100px;
+}
+#tab3 table {
+    width:100%;
+    background-color:lightgray;
+}
+
+#tab4 {
+     overflow:scroll;
+     height:100%;
+     width:1100px;
+}
+#tab4 table {
+    width:100%;
+    background-color:lightgray;
+}
+
+#tab5 {
+     overflow:scroll;
+     height:100%;
+     width:1100px;
+}
+#tab5 table {
+    width:100%;
+    background-color:lightgray;
+}
+
+#tab6 {
+     overflow:scroll;
+     height:100%;
+     width:1100px;
+}
+#tab6 table {
+    width:100%;
+    background-color:lightgray;
+}
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+    width: 500px;
+    text-align: left;
+    overflow:hidden;
+    height:200px;
+    margin: 0px auto;
+    text-size-adjust: auto;
+  }
+
+#main-container{
+    margin: 150px auto;
+    font-family: Arial;
+  }
+
+th, td {
+    border: solid 1px black;
+    padding: 0;
+  }
+
+thead {
+    background-color: #246355;
+    border-bottom: solid 5px #0F362D;
+    color: white;
+  }
+
+tr:nth-child(even){
+    background-color: #ddd;
+    
+  }
+
+/* @media screen and (max-width: 600px) {
+       table {
+           width:100%;
+       }
+       thead {
+           display: none;
+       }
+       tr:nth-of-type(2n) {
+           background-color: inherit;
+       }
+       tr td:first-child {
+           background: #f0f0f0;
+           font-weight:bold;
+           font-size:1.3em;
+       }
+       tbody td {
+           display: block;
+           text-align:center;
+       }
+       tbody td:before {
+           content: attr(data-th);
+           display: block;
+           text-align:center;
+       }
+} */
+

@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1 class="text-white">Listado de Materias Primas
+    <style type="text/css">
+        body {
+            color: #CCC;
+        }
+        
+    
+    </style>
+</h1>
+
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">Elementos</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#fat">Arábica</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#mdo">Robusta</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Otros</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#one">Uno</a>
+          <a class="dropdown-item" href="#two">Dos</a>
+          <a class="dropdown-item" href="#three">Tres</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="text-white" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <h4 id="fat">Tres tipos básicos en función del origen de la planta</h4>
+    <p>Si bien existe una amplia cantidad de países en que se cultivan los cafetos, lo cierto es a nivel general nos podemos encontrar con tres grandes tipos de café en función de la variedad de la planta que se cultiva, siendo principalmente dos especies las utilizadas y la tercera de las opciones la combinación de los granos de ambos tipos.</p>
+    <h4 id="mdo">Café arábica</h4>
+    <p>El tipo de café que más se utiliza y a su vez que más apreciado resulta es el que se corresponde con las primeras variantes utilizadas para elaborar la bebida: el café arábica.
+
+      Esta especie procedente de Etiopía y con varias subespecies tiende a ser delicada y a proporcionar un grano con un sabor muy aromático y una cantidad considerable pero menor a la otra variedad existente en cuanto a nivel de cafeína. Pese a su origen africano en la actualidad suele ser más cultivado en los países de Sudamérica, Asia y Centroamérica.</p>
+    <h4 id="one">Café robusta</h4>
+    <p>Si bien tiende a ser menos utilizado a nivel general, esta variedad posee la importante característica de tener un nivel mucho más elevado de cafeína que el anterior, algo que provoca que el sabor que produce a la hora de beberse sea mucho más intenso. y con tono bastante más amargo.</p>
+    <h4 id="two">Combinaciones</h4>
+    <p>Una gran parte de los cafés que nos tomamos no proceden únicamente de una de las dos especies anteriores y sus variedades, sino que por lo general nos encontramos ante una mezcla en diferentes proporciones de ambas. La proporción exacta puede depender entre otras cosas del tipo de elaboración que se pretende realizar.</p>
+  </div>
+
+{% endblock %}

@@ -19,197 +19,110 @@
     <!-- BARRA DE OPCIONES -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/">COLCAFÉ</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="text" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ url_for('about') }}">Materia Prima<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('Resultados') }}">Variables</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('DataFrames') }}">Resultados</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Información
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Primer Escenario</a>
-                        <a class="dropdown-item" href="#">Segundo Escenario</a>
-                        <a class="dropdown-item" href="#">Tercer Escenario</a>
-                        <a class="dropdown-item" href="#">Cuarto Escenario</a>
-                        <a class="dropdown-item" href="#">Quinto Escenario</a>
-                    </div>
-                </li>   
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="Search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-            </form>
-        </div>
     </nav>
 
     <!-- CONTENIDO DE LA PÁGINA -->
     <div class="jumbotron mt-5">
-        <h1 class="display-50">Aplicativo</h1>
-        <p class="lead">Las mezclas de café han de servir para obtener un producto adecuado al objetivo que queremos
-            conseguir.</p>
+        <h1 class="display-50">Aforo exportación</h1>
+        <p class="lead">Esta aplicación web calcula el balance del aforo de solidos solubles y café tostado por lote de caneca de exportación.</p>
         <hr class="my-4">
-        <p>Los granos de café de los distintos orígenes se mezclan entre sí para obtener un café equilibrado en cuerpo,
-            aroma y acidez.</p>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal"
-            data-whatever="@mdo">Iniciar</button>
-
-
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <form name="passdata" action="." method="POST">     
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Parámetros del Modelo</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-
-                            <!-- Card Número 1-->
-                            <div class="card border-secondary">
-                                <div class="card-body">
-                                    <h5 class="card-title">Receta Actual</h5>
-                                    <hr>
-
-                                        <div class="input-group mb-2">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text text-white bg-secondary" id="inputGroup-sizing-default">Tamaño de
-                                                    Producción:
-                                                </label>
-                                            </div>
-                                            <input type="number" class="form-control" aria-label="Default"
-                                                aria-describedby="inputGroup-sizing-default" name="TP">
-                                        </div>
-
-                                        <div class="input-group mb-2">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text bg-warning" id="inputGroup-sizing-default">Proporción
-                                                    MP1:</label>
-                                            </div>
-                                            <input type="text" class="form-control" aria-label="Default"
-                                                aria-describedby="inputGroup-sizing-default" name="PMP1">
-                                        </div>
-
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-prepend">
-                                                    <label class="input-group-text bg-muted" id="inputGroup-sizing-default">Costo
-                                                        MP1:</label>
-                                                </div>
-                                                <input type="number" class="form-control" placeholder="$"
-                                                    aria-label="Default" aria-describedby="inputGroup-sizing-default" name="CMP1">
-                                            </div>
-
-                                        <div class="input-group mb-2">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text bg-warning" id="inputGroup-sizing-default">Proporción
-                                                    MP2:</label>
-                                            </div>
-                                            <input type="text" class="form-control" aria-label="Default"
-                                                aria-describedby="inputGroup-sizing-default" name="PMP2">
-                                        </div>
-
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-prepend">
-                                                    <label class="input-group-text bg-muted" id="inputGroup-sizing-default">Costo
-                                                        MP2:</label>
-                                                </div>
-                                                <input type="" class="form-control" placeholder="$"
-                                                    aria-label="Default" aria-describedby="inputGroup-sizing-default" name="CMP2">
-                                            </div>
-
-                                        <!-- <div class="form-group">
-                                            <label for="message-text" class="col-form-label">Comentario:</label>
-                                            <textarea class="form-control" id="message-text"></textarea>
-                                        </div> -->
-
-                                </div>
-
-                            </div>
-
-                            <hr>
-
-                            <!-- Card Número 2-->
-                            <div class="card border-secondary">
-                                <div class="card-body">
-                                    <h5 class="card-title">Perfil del Café Requerido</h5>
-                                    <hr>
-                                    <form>
-
-                                        <div class="input-group mb-2">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text text-white bg-secondary" id="inputGroup-sizing-default">Grano
-                                                    Aprovechable Requerido:</label>
-                                            </div>
-                                            <input type="number" class="form-control" aria-label="Default"
-                                                aria-describedby="inputGroup-sizing-default" name="GAR">
-                                        </div>
-
-                                        <div class="input-group mb-2">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text bg-warning" id="inputGroup-sizing-default">Densidad
-                                                    Requerida:</label>
-                                            </div>
-                                            <input type="number" class="form-control" aria-label="Default"
-                                                aria-describedby="inputGroup-sizing-default" name="DR">
-                                        </div>
-
-                                        <div class="input-group mb-2">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text text-white bg-secondary" id="inputGroup-sizing-default">Defectos de
-                                                    Grupo 1:</label>
-                                            </div>
-                                            <input type="number" class="form-control" aria-label="Default"
-                                                aria-describedby="inputGroup-sizing-default" name="DG1">
-                                        </div>
-
-                                        <div class="input-group mb-2">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text bg-warning" id="inputGroup-sizing-default">Taza
-                                                    Requerida:</label>
-                                            </div>
-                                            <input type="text" class="form-control" aria-label="Default"
-                                                aria-describedby="inputGroup-sizing-default" name="TR">
-                                        </div>
-
-                                        <!-- <div class="form-group">
-                                            <label for="message-text" class="col-form-label">Comentario:</label>
-                                            <textarea class="form-control" id="message-text"></textarea>
-                                        </div> -->
-                                    </form>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                            <!-- <button type="button" class="btn btn-primary">Aplicar</button> -->
-                            <input type="submit" class="btn btn-primary" value="Aplicar">
-                        </div>
-                    </div>
-                </form>        
-            </div>
-        </div>
-
+        <p>Determinar parámetros del aforo:</p>
+        <body>
+            <div class="category_div" id="category_div">Producto:
+                <select id="source" name="source"
+                    onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+                    <option value="">Select product</option>
+                    <option value="EXST KOR">EXST KOR</option>
+                    <option value="Suntory/Try/FCS JP">Suntory/Try/FCS JP</option>
+                    <option value="CB2033">CB2033</option>
+                    <option value="Kamex">Kamex</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div><br>
+        </body>
+        <form>
+            <label for="yield">Yield:</label>
+            <input type="number" id="yield" name="yield"><br>
+            <label for="ctotales">Canecas totales:</label>
+            <input type="number" id="ctotales" name="ctotales"><br>
+            <label for="cactuales">Canecas emp:</label>
+            <input type="number" id="cactuales" name="cactuales"><br>
+            <label for="peso">Peso caneca (kg):</label>
+            <input type="number" id="peso" name="peso"><br>
+            <label for="ccaneca">°Brix caneca:</label>
+            <input type="number" id="ccaneca" name="ccaneca"><br>
+            <label for="ssextracto">SS Extracto:</label>
+            <input type="number" id="ssextracto" name="ssextracto"><br>
+            <label for="tostado">Tostado silos:</label>
+            <input type="number" id="tostado" name="tostado"><br>
+            <button onclick="Calcular()">Calcular</button>
+        </form>
     </div>
+    
+    <script type="text/javascript">
+        let seleccionar = document.querySelector('select');
+        let parrafo = document.querySelector('body');
+        seleccionar.addEventListener('change', establecerValores);
+
+        function establecerValores() {
+            let eleccion = seleccionar.value;
+            if (eleccion === 'EXST KOR') {
+                document.getElementById("yield").value = 45;
+                document.getElementById("ctotales").value = 90;
+                document.getElementById("cactuales").value = 0;
+                document.getElementById("peso").value = 200;
+                document.getElementById("ccaneca").value = 49;
+                document.getElementById("ssextracto").value = 0;
+                document.getElementById("tostado").value = 0;
+            } else if (eleccion === 'Suntory/Try/FCS JP') {
+                document.getElementById("yield").value = 41;
+                document.getElementById("ctotales").value = 116;
+                document.getElementById("cactuales").value = 0;
+                document.getElementById("peso").value = 150;
+                document.getElementById("ccaneca").value = 34;
+                document.getElementById("ssextracto").value = 0;
+                document.getElementById("tostado").value = 0;
+            } else if (eleccion === 'CB2033') {
+                document.getElementById("yield").value = 16;
+                document.getElementById("ctotales").value = 90;
+                document.getElementById("cactuales").value = 0;
+                document.getElementById("peso").value = 233;
+                document.getElementById("ccaneca").value = 34;
+                document.getElementById("ssextracto").value = 0;
+                document.getElementById("tostado").value = 0;
+            } else if (eleccion === 'Kamex') {
+                document.getElementById("yield").value = 20;
+                document.getElementById("ctotales").value = 116;
+                document.getElementById("cactuales").value = 0;
+                document.getElementById("peso").value = 180;
+                document.getElementById("ccaneca").value = 31;
+                document.getElementById("ssextracto").value = 0;
+                document.getElementById("tostado").value = 0;
+            } else {
+                document.getElementById("yield").value = 0;
+                document.getElementById("ctotales").value = 0;
+                document.getElementById("cactuales").value = 0;
+                document.getElementById("peso").value = 0;
+                document.getElementById("ccaneca").value = 0;
+                document.getElementById("ssextracto").value = 0;
+                document.getElementById("tostado").value = 0;
+            }
+        }
+
+        function Calcular() {
+            var crestantes = document.getElementById("ctotales").value - document.getElementById("cactuales").value;
+            var sscanecas = ((crestantes * (document.getElementById("peso").value)) * ((document.getElementById("ccaneca").value)/100)*0.833);
+            var sstostado = (document.getElementById("tostado").value * ((document.getElementById("yield").value)/100));
+            var ssplanta = document.getElementById("ssextracto").value;
+            var ss = sscanecas - sstostado - ssplanta;
+            var tostado = (ss / ((document.getElementById("yield").value)/100)).toFixed(0)
+            alert("Se requieren " + tostado + "kg de café tostado para completar las " + crestantes + " canecas que faltan")
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
